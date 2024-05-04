@@ -134,6 +134,38 @@
         .company-logo>img{
             width: 100%;
         }
+        /* Media Query for Tablet Devices */
+@media only screen and (max-width: 768px) {
+    .board-members-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .board-members-card {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        max-width: 200px; 
+    }
+    .member-photo {
+        height: 200px; 
+    }
+    .card-content {
+        height: auto;
+    }
+    .company-logo {
+        width: 60%;
+    }
+    .card-content-heading {
+        font-size: 16px; 
+    }
+    .card-content-subheading {
+        font-size: 14px; 
+    }
+}
+
         
     </style>
 
