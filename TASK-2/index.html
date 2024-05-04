@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-2</title>
+    <style>
+        .container {
+            margin: auto;
+            max-width: 1340px;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-areas: "a b b"
+                "c c c";
+        }
+
+        .container>div {
+            border: solid 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container>div:nth-of-type(1) {
+            grid-area: a;
+            background-color: #02026f;
+        }
+
+        .container>div:nth-of-type(2) {
+            grid-area: b;
+            background-color: #3140af;
+        }
+
+        .container>div:nth-of-type(3) {
+            grid-area: c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding: 15px;
+            background-color: #222222;
+            color:white
+        }
+
+        .logo {
+            height: 186px;
+            width: 186px;
+            background-image: url('./logo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .footer-content-anchor {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 100%;
+        }
+        .footer-content-anchor>div{
+            width: auto; ;
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+            margin-left: 20px;
+            gap:10px;
+            
+        }
+        .footer-content-anchor>div>a{
+            text-decoration: none;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .copyright{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:600px;
+        }
+        .copyright>.left-side{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+        .copyright>.right-side{
+            display: flex;
+            justify-content: space-between;
+            gap:5px;   
+        }
+        .copyright>.right-side>span{
+            gap:10px;
+        }
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-areas: "b b b" "a a a" "c c c";
+    }
+
+    .logo {
+        grid-area: a;
+        margin-top: 20px; 
+    }
+
+    .footer {
+        grid-template-areas: "footer";
+    }
+
+    .footer-content-anchor {
+        grid-template-columns: 1fr;
+        margin-top: 20px; 
+    }
+
+    .copyright {
+        grid-area: footer;
+        margin-top: 20px; 
+    }
+@media only screen and (max-width: 480px) {
+    .container {
+        grid-template-areas: "a" "b" "c";
+    }
+
+    .footer-content-anchor {
+        margin-top: 20px; 
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+}
+}
+
+    </style>
+</head>
+
+
+<body>
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logo"></div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-anchor">
+                    <div>
+                        <a href="#"><strong>Shop</strong></a>
+                        <a href="#" style="font-size: 13px;">Gift Card</a>
+                        <a href="#" style="font-size: 13px;">Etsy Register</a>
+                        <a href="#" style="font-size: 13px;">Sitemap</a>
+                        <a href="#" style="font-size: 13px;">Etsy blog</a>
+                        <a href="#" style="font-size: 13px;">Etsy United Kingdom</a>
+                        <a href="#" style="font-size: 13px;">Etsy Germany</a>
+                        <a href="#" style="font-size: 13px;">Etsy Canada</a>
+                    </div>
+                    <div>
+                        <a href="#"><strong>Sell</strong></a>
+                        <a href="#" style="font-size: 13px;">Sell on Etsy</a>
+                        <a href="#" style="font-size: 13px;">Teams</a>
+                        <a href="#" style="font-size: 13px;">Forums</a>
+                        <a href="#" style="font-size: 13px;">Affiliates & Creators</a>
+                    </div>
+                    <div>
+                        <a href="#"><strong>About</strong></a>
+                        <a href="#" style="font-size: 13px;">Etsy, Inc.</a>
+                        <a href="#" style="font-size: 13px;">Policies</a>
+                        <a href="#" style="font-size: 13px;">Investors</a>
+                        <a href="#" style="font-size: 13px;">Careers</a>
+                        <a href="#" style="font-size: 13px;">Press</a>
+                        <a href="#" style="font-size: 13px;">Impact</a>
+                        <a href="#" style="font-size: 13px;">Legal imprint</a>
+                    </div>
+                    <div>
+                        <a href="#"><strong>Shop</strong></a>
+                        <a href="#" style="font-size: 13px;">Gift Card</a>
+                        <a href="#" style="font-size: 13px;">Etsy Register</a>
+                        <a href="#" style="font-size: 13px;">Sitemap</a>
+                        <a href="#" style="font-size: 13px;">Etsy blog</a>
+                        <a href="#" style="font-size: 13px;">Etsy United Kingdom</a>
+                        <a href="#" style="font-size: 13px;">Etsy Germany</a>
+                        <a href="#" style="font-size: 13px;">Etsy Canada</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="left-side">
+                    <span>India</span>
+                    <span>|</span>
+                    <span>English</span>
+                    <span>|</span>
+                    <span>₹(INR)</span>
+                </div>
+                <div class="right-side">
+                    <span>@2024 Etsy.Inc.</span>
+                    <span>Terms of Use</span>
+                    <span>Privacy</span>
+                    <span>Intrest-based ads</span>
+                    <span>Local Shops</span>
+                    <span>Regions</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
