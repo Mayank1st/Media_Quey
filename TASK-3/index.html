@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-3</title>
+    <style>
+        *{
+            background-color: #f2f2f2;
+        }
+        .container{
+            margin:auto;
+            max-width: 1320px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:15px;
+        }
+        .container>div{
+            height: 310px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .card-img{
+            height: 225px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .card-text{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: auto;
+            background-color:#ffffff;
+        }
+        .card-text>div{
+            height: 48px;
+            width: auto; 
+            margin-top: 15px;
+            margin-right: 20px;
+            background-color: #fee9f1;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+
+           
+        }
+        .card-text-content{
+            background-color: #ffffff;
+        }
+        .card-text-content>span:nth-of-type(1){
+            padding:10px;
+            border:dashed #fc2779 1px;
+            color: #fc2779;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: #fee9f1;
+        }
+        .card-text-content>span:nth-of-type(2){
+            padding:10px;
+            border:dashed #fc2779 1px;
+            color: #fc2779;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #fee9f1;
+        }
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            }
+            .card-img {
+                height: 180px; 
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            }
+            .card-img {
+                height: 120px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="card-img" style="background-image: url('https://d32baadbbpueqt.cloudfront.net/Promotion/4a8296f5-1519-4681-b68d-08e487eb887f.jpg');"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('https://d32baadbbpueqt.cloudfront.net/Promotion/c7161d7c-33ee-4ca7-bb50-933238309204.jpg')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('https://d32baadbbpueqt.cloudfront.net/Promotion/25148f7d-24c0-41c1-a524-ccd451865e03.jpg')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('https://d32baadbbpueqt.cloudfront.net/Promotion/8adc6909-ac53-4df0-8a3e-50b0f5473586.jpg')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('./1.png')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('./2.png')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('./3.png')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card-img" style="background-image: url('./4.png')"></div>
+            <div class="card-text">
+                <div class="card-text-content">
+                    <span>TREAT699</span><span>Copy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
